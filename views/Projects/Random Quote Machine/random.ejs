@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Random Quote Machine</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+  <link rel='stylesheet' type="text/css" href='random.css' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src='random.js'></script>
+</head>
+
+<body>
+  <img src='https://static.pexels.com/photos/209500/pexels-photo-209500.jpeg' id='backgroundImage'></img>
+  <section class="section">
+    <div class="container box" id='randomBox'>
+      <div class="block center">
+        <h1 class="title is-1">
+        Random Quote Machine
+      </h1>
+      </div>
+      <div class='block center'>
+        <button class="subtitle is-3 button is-warning btn animated flash" id='clickMe' onClick='quotes()'>
+        <h2>
+         Click Me!
+        </h2>
+      </button>
+      </div>
+      <div>
+        <h3>By Gleen Lexry Alexander Wan</h3>
+      </div>
+    </div>
+  </section>
+  <div class='container' id='quoteBox'>
+    <div class="notification is-warning">
+      <div class='quotes animated fadeInDown' id='insertQuote'>
+        <span class='quote center'>What Quote could I be?</span>
+        <br></br>
+        <span class='author' id='myAuthor'>-Random Author</span>
+
+        <!-- This is the share button -->
+        <div>
+          <a target='_blank' id='twitter' href='#' title="Tweet this quote!">
+      <img  src='http://pngimg.com/uploads/twitter/twitter_PNG28.png' id='twitter'></img>
+    </a>
+        </div>
+        <!-- This is the share button -->
+      </div>
+
+    </div>
+
+  </div>
+  <script src='random.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>

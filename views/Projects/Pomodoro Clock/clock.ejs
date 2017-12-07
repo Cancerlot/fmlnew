@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content='Free pomodoro clock built by Gleen Lexry Alexanander Wan. Conctact me at glen_wan@ymail.com' />
+  <meta name 'keywords' content='free,clock,html,javascript,css,bootstrap,best,pomodoro' />
+  <title>Pomodoro Clock</title>
+  <meta name='viewport' conetent='width=device-width, initial-scale=1.0' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel='stylesheet' href="clock.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class='container-fluid'>
+
+
+    <h1 class='text-center'>Pomodoro Clock</h1>
+
+    <div class='row'>
+      <div class='col'>
+      </div>
+      <div class='col' id='clock'>
+        <div class='row'>
+
+          <!-- Sesssion Tab -->
+          <div id='sess' class='btn-group well col'>
+            <div id='minusSess' class='btn btn-warning col'>-
+            </div>
+            <div class='btn btn-default col' id='sesslen'>Session : </br> 25m
+            </div>
+            <div id='plusSess' class='btn btn-warning col'>+
+            </div>
+          </div>
+
+          <!-- Break Tab -->
+          <div id='break' class='btn-group well col'>
+            <div id='minusBreak' class='btn btn-warning col'>-
+            </div>
+            <div class='btn btn-default col' id='breaklen'>Break : </br> 10m
+            </div>
+            <div id='plusBreak' class='btn btn-warning col'>+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class='col'>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col'>
+      </div>
+      <div id='countdown' class='text-center well col'>25:00
+      </div>
+      <div class='col'>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col'>
+      </div>
+
+      <div class='btn-group well options'>
+        <div id='go' class=' btn btn-success'>Go
+        </div>
+        <div id='stop' class=' btn btn-info'>stop
+        </div>
+        <div id='reset' class='btn btn-danger'>Reset
+        </div>
+      </div>
+
+      <div class='col'>
+      </div>
+    </div>
+
+    <script rel='text/javascript' src='clock.js'></script>
+
+</body>
+
+</html>

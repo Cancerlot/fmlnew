@@ -1,0 +1,63 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Show the Local Weather</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel='stylesheet' type="text/css" href='weather.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src='weather.js'></script>
+</head>
+
+
+<body>
+  <div class='container-fluid'>
+    <div class='container' id='bg1'>
+      <div class='row'>
+
+        <!--My signiture-->
+
+        <h2 class='col-xs-4 col-md-4' id='signiture'>Product of Gleen Lexry Alexander Wan
+      </h2>
+      </div>
+      <div id='data'>
+
+        <div class='row'>
+          <div class='boxed col-xs-6 col-md-4 col-sm-2'></div>
+          <div class='boxed col-xs-6 col-md-4 col-sm-8' id='box1'>
+
+            <!--This is my refresh button, to releaod the page-->
+            <button class="button is-info" id='btn1'>Refresh
+  </button>
+
+            <!-- Switch for metric or imperial system -->
+
+            <label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+            <p class='block'>Metric/Imperial</p>
+
+            <!-- loading bar.(Cause i'm extra.) -->
+            <div class="modal"></div>
+
+            <h1 class='block' id='country'></h1>
+            <h1 class='block' id='city'></h1>
+            <!-- Weather icons that change acordingly -->
+            <div class='block' id='main'></div>
+            <div class='block' id='cTemp'></div>
+            <div class='block' id='temp_zone'></div>
+            <div class='block' id='humidity'></div>
+            <div class='block' id='wind'></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <script src='weather.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>

@@ -1,0 +1,59 @@
+#backgroundImage {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#twitter {
+  max-width: 75px;
+  max-height: 75px;
+  margin-top: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+  font-family: 'Signika', sans-serif;
+}
+
+h1 {
+  font-family: 'Signika', sans-serif;
+}
+
+h2 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h3 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.quote {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 40px;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+}
+
+#quoteBox {
+  opacity: 0.75;
+}
+
+#randomBox {
+  opacity: 0.75;
+}
+
+#clickMe {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 3;
+}
+
+#insertQuote {
+  -webkit-animation-delay: 0.6s;
+}

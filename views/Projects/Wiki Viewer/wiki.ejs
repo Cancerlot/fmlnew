@@ -1,0 +1,46 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+  <link rel='stylesheet' type="text/css" href='wiki.css' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src='wiki.js'></script>
+</head>
+
+<body>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-3'></div>
+      <div class='box col-md-6'>
+        <h1 class='block'>Wikipedia Viewer</h1>
+        <br>
+        </br>
+        <h2 class='block'>Look up for wikipedia articles
+              <i class="fa fa-search" aria-hidden="true">
+                </i>
+            <h2>
+              <div class="field">
+                <div class="control">
+                  <div class='row'>
+                  <input class="input is-primary col-md-6" type="text" placeholder='Search' id='search'>
+                    <a class="button is-info col-md-2" type='button' id='enter'>Search</a>
+                    <div class='col-md-1'></div>
+                    <a class='button is-warning col-md-3 col-xs-12' id='feelingLucky' type='button' target=_blank href='https://en.wikipedia.org/wiki/Special:Random'>I'm feeling Lucky</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+      <div class='row'>
+          <div class='col-md-3'></div>
+          <div class='box col-md-6' id='hideBox'>
+            <p id='results'></p>
+            </br>
+            <ul id='searchResults'>
+            </ul>
+          </div>
+      </div>
+  </div>
+</body>
