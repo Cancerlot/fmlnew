@@ -16,6 +16,7 @@ db.once('open', function() {
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
+  time: String,
   name: String,
   email: String,
   message: String
@@ -67,7 +68,8 @@ app.post('/post', function(req,res){
    const name     = req.body.name;
    const email    = req.body.email;
    const message  = req.body.message;
-   const newUser = {name: name, email: email, message:message}
+   const time     = Date();
+   const newUser = {time:time ,name: name, email: email, message:message};
    user.create(newUser, function(err, newlyCreated){
        if(err){
            console.log(err);
