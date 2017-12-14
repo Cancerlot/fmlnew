@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Lexit</title>
-  <link rel="shortcut icon" type="image/png" href='/images/logo.png' />
+  <title>Jam Spread Ninja</title>
+  <link rel="shortcut icon" type="image/png" href='/images/logo(2).png' />
   <meta name="author" content="Gleen Lexry Alexander Wan">
   <meta name='keywords' content='Portfolio, web, web-developer, front-end, front end web developer, for hire, hiring, malaysia'>
   <meta name='description' content="This is Gleen Lexry Alexander Wan's portfolio. I am a web developer who specialises in front end development">
@@ -22,7 +22,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class='container'>
       <a class="navbar-brand">
-    <img src='/images/logo.png' height="40" width="40" id='meLink'/>
+    <img src='/images/logo(2).png' height="40" width="40" id='meLink'/>
     </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav">
           <a class="nav-item nav-link" id='skillsLink'>Skills</a>
-          <a class="nav-item nav-link" id='portfolioLink'>Portfolio</a>
+          <a class="nav-item nav-link" id='projectLink'>Projects</a>
           <a class="nav-item nav-link" id="contactLink">Contact</a>
         </div>
       </div>
@@ -44,22 +44,19 @@
 
     <div class='row' id='header'>
       <div class='col'>
-        <img class='box moveIn' src='/images/profilepic.jpg' id='profilePic' />
+        <img class='box fadeIn' src='/images/profilepic.jpg' id='profilePic' />
       </div>
       <div class='col'>
-        <div class='box moveIn' id='description'>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </h3>
+        <div class='box fadeIn' id='description'>
         </div>
       </div>
     </div>
   </div>
 
-  <div class='parallax2'>
-  </div>
-
   <div class='container'>
-    <h1 id='skills'>Skills</h1>
-
+    <div class='badge'>
+      <h1 id='skills'>Skills</h1>
+    </div>
     <div class='row'>
       <div class='col box'>
         <img src='/images/Web application Icon.png' height="120" width="120" id='webApp'>
@@ -85,81 +82,82 @@
     </div>
   </div>
 
-  <div class='parallax3'>
-  </div>
+  <div class='container-fluid' id='projectsContainer'>
+    <div class='container'>
+      <div class='badge'>
+        <h1 id='projects'>Projects</h1>
+      </div>
+      <div class='row'>
+        <div class='col'>
+          <div class='box2'>
+            <a href='/pomodoroclock' target="_blank">
+              <div class="overlay">
+                <div class="text box2"> WebApp to keep me on track when working on projects. This app is Phone, tablet, laptop compatable. Acheived through Bootstrap</div>
+              </div>
+              <img class='resizeImg' src='/images/clockPrev.png' href='\Projects\.html' />
+            </a>
+          </div>
+          <h2>Pomodoro Clock</h2>
+        </div>
+        <div class='col'>
+          <div class='box2'>
+            <a href='/jscalculator' target="_blank">
+              <div class="overlay">
+                <div class="text box2">Hello World</div>
+              </div>
+              <img class='resizeImg' src='/images/calcPrev.png' />
+            </a>
+          </div>
+          <h2>Javascript Calculator</h2>
+        </div>
+        <div class='col'>
+          <div class='box2'>
+            <a href='/wikiviewer' target="_blank">
+              <div class="overlay">
+                <div class="text box2">Hello World</div>
+              </div>
+              <img class='resizeImg' src='/images/wikiPrev.png' />
+            </a>
+          </div>
+          <h2>Wikipedia Viewer</h2>
+        </div>
 
-  <div class='container'>
-    <h1 id='portfolio'>Portfolio</h1>
-    <div class='row'>
-      <div class='col'>
-        <div class='box2'>
-          <a href='/pomodoroclock' target="_blank">
-            <div class="overlay">
-              <div class="text box2"> WebApp to keep me on track when working on projects. This app is Phone, tablet, laptop compatable. Acheived through Bootstrap</div>
-            </div>
-            <img class='resizeImg' src='/images/clockPrev.png' href='\Projects\.html' />
-          </a>
+        <div class='col'>
+          <div class='box2'>
+            <a href='/showthelocalweather' target="_blank">
+              <div class="overlay">
+                <div class="text box2">Hello World</div>
+              </div>
+              <img class='resizeImg' src='/images/weatherPrev.png' />
+            </a>
+          </div>
+          <h2>Show the Local Weather</h2>
         </div>
-        <h2>Pomodoro Clock</h2>
-      </div>
-      <div class='col'>
-        <div class='box2'>
-          <a href='/jscalculator' target="_blank">
-            <div class="overlay">
-              <div class="text box2">Hello World</div>
-            </div>
-            <img class='resizeImg' src='/images/calcPrev.png' />
-          </a>
+        <div class='col'>
+          <div class='box2'>
+            <a href='/randomquotemachine' target="_blank">
+              <div class="overlay">
+                <div class="text box2">Hello World</div>
+              </div>
+              <img class='resizeImg' src='/images/randomPrev.png' />
+            </a>
+          </div>
+          <h2>Random Quote Machine</h2>
         </div>
-        <h2>Javascript Calculator</h2>
-      </div>
-      <div class='col'>
-        <div class='box2'>
-          <a href='/wikiviewer' target="_blank">
-            <div class="overlay">
-              <div class="text box2">Hello World</div>
-            </div>
-            <img class='resizeImg' src='/images/wikiPrev.png' />
-          </a>
+        <div class='col'>
+          <div class='box2'>
+            <a href='/twitchtv' target="_blank">
+              <div class="overlay">
+                <div class="text box2">Hello World</div>
+              </div>
+              <img class='resizeImg' src='/images/twitch.png' />
+            </a>
+          </div>
+          <h2>TwitchTV streamers</h2>
         </div>
-        <h2>Wikipedia Viewer</h2>
       </div>
 
-      <div class='col'>
-        <div class='box2'>
-          <a href='/showthelocalweather' target="_blank">
-            <div class="overlay">
-              <div class="text box2">Hello World</div>
-            </div>
-            <img class='resizeImg' src='/images/weatherPrev.png' />
-          </a>
-        </div>
-        <h2>Show the Local Weather</h2>
-      </div>
-      <div class='col'>
-        <div class='box2'>
-          <a href='/randomquotemachine' target="_blank">
-            <div class="overlay">
-              <div class="text box2">Hello World</div>
-            </div>
-            <img class='resizeImg' src='/images/randomPrev.png' />
-          </a>
-        </div>
-        <h2>Random Quote Machine</h2>
-      </div>
-      <div class='col'>
-        <div class='box2'>
-          <a href='/twitchtv' target="_blank">
-            <div class="overlay">
-              <div class="text box2">Hello World</div>
-            </div>
-            <img class='resizeImg' src='/images/twitch.png' />
-          </a>
-        </div>
-        <h2>TwitchTV streamers</h2>
-      </div>
     </div>
-
   </div>
 
   <div class='parallax4'>
@@ -170,7 +168,7 @@
     <div id='contactMe'><button class="button" data-toggle="modal" data-target="#modalContactMe"><span><a>Contact me &nbsp;</a></span></button>
     </div>
 
-        <!-- Modal -->
+    <!-- Modal -->
     <div class="modal fade" id="modalContactMe">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">

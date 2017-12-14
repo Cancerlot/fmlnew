@@ -1,13 +1,29 @@
 $(document).ready(function(){
 
+let i = 0;
+const text = 'Hi, I am Glen and I am a Front-end Web Developer who is motivated to combine the art of design with the aptitude of programming.';
+
+function delay(){
+  setTimeout(function intro() {
+    if (i < text.length) {
+      document.querySelector('#description').innerHTML += text.charAt(i);
+      i++;
+      setTimeout(intro, 50);
+    }
+  },1000)
+}
+
+delay();
+
+
   //scroll effects
 
-  var me = document.querySelector('#meLink').addEventListener('click', scrollTo),
+  const me = document.querySelector('#meLink').addEventListener('click', scrollTo),
 
   skill = document.querySelector('#skillsLink').addEventListener('click', scrollTo1),
 
   portfolio =
-  document.querySelector('#portfolioLink').addEventListener('click', scrollTo2),
+  document.querySelector('#projectLink').addEventListener('click', scrollTo2),
 
   contact =
   document.querySelector('#contactLink').addEventListener('click', scrollTo3);
@@ -27,7 +43,7 @@ $(document).ready(function(){
   }
 
   function scrollTo2() {
-    document.querySelector('#portfolio').scrollIntoView({
+    document.querySelector('#projects').scrollIntoView({
       behavior: 'smooth',
       block: 'start'
     });
@@ -39,10 +55,5 @@ $(document).ready(function(){
       block: 'start'
     });
   }
-
-  //portfolio image overlay
-
-  
-
 
 });
