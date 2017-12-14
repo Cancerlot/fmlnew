@@ -34,8 +34,9 @@ h3 {
 }
 
 #description {
-  color: rgb(117, 22, 22);
+  color: black;
   font-size: 1.7em;
+  font-weight: 600 !important;
   font-family: 'Anonymous Pro', monospace;
 }
 
@@ -53,7 +54,6 @@ p {
 p:hover {
   background-color: #311F1B;
   transition: background-color 0.2s, color 1s;
-  padding: 0.2em;
   color: white;
 }
 
@@ -169,17 +169,12 @@ button:focus {
 }
 
 .parallax4 {
-  background-image: url("/images/blackSmoke.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: black;
   height: 8vh;
   width: 100vw;
   position: absolute;
   z-index: 10;
   opacity: 0.5;
-  transition: opacity 5s;
 }
 
 #profilePic {
@@ -288,12 +283,8 @@ button:focus {
 }
 
 #skillsLink, #projectLink, #contactLink {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 700;
-}
-#skillsLink:hover, #projectLink:hover, #contactLink:hover {
-  color: #420d09;
-  transform: scale(1.1);
 }
 
 #meLink {
@@ -445,4 +436,28 @@ button:focus {
   50% {
     opacity: 1;
   }
+}
+
+#icons {
+  text-align: center;
+  align-content: center;
+  color: white;
+  font-size: 2em;
+}
+
+i {
+  margin: 0 0.5em 0 0.5em;
+}
+
+i:hover {
+  border-radius: 100%;
+  background-color: red;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+#copywrite {
+  text-align: center;
+  align-content: center;
+  color: white;
 }
