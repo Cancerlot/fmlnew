@@ -11,11 +11,6 @@ html, body {
   overflow-x: hidden;
 }
 
-.container-fluid {
-  padding: 10vh 0px 0px 0px;
-  overflow:hidden
-}
-
 h1 {
   text-align: center;
   font-family: 'Pacifico', cursive !important;
@@ -47,25 +42,23 @@ h3 {
 p {
   z-index: 1;
   text-align: center;
-  margin-top: 10vh !important;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  margin: auto;
   border-radius: 5px;
   transition: 2s;
-  font-size: 5vh;
+  font-size: 1.2em;
   animation: intro 3s 1 forwards;
-  color: #10053D;
+  color: black;
+  margin-bottom: 0 !important;
 }
 
 p:hover {
-  background-color: rgb(70, 55, 130);
-  transition: background-color 0.5s, color 1s;
+  background-color: #311F1B;
+  transition: background-color 0.2s, color 1s;
+  padding: 0.2em;
   color: white;
 }
 
 #contactMe {
-  margin: 30vh 0 30vh 0;
+  padding: 22vh 0 15vh 0;
 }
 
 .button {
@@ -176,12 +169,16 @@ button:focus {
 }
 
 .parallax4 {
-  background-color: #1c1c1c;
-  height: 10vh;
+  background-image: url("/images/blackSmoke.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 8vh;
   width: 100vw;
   position: absolute;
   z-index: 10;
-  opacity: 1;
+  opacity: 0.5;
   transition: opacity 5s;
 }
 
@@ -254,33 +251,39 @@ button:focus {
   padding: 0 0 5vh 0;
 }
 
+#jamSpreadNinja {
+  font-family: 'Pacifico', cursive;
+}
+
 .badge {
-  padding: 7em 0 0 0 !important;
+  padding: 6em 0 6em 0 !important;
   background-color: red;
-  width: 22em;
-  height: 22em;
+  width: 25em;
+  height: 25em;
   display:block !important;
-  margin: 10em auto 10em auto;
+  margin: 7em auto 5em auto;
   border-radius: 100% !important;
   vertical-align: center;
   opacity: 1;
   animation: wow 3s infinite forwards;
+  border: 20px double grey;
 }
 
 @keyframes wow {
   0% {
-    height: 22em;
-    width: 22em;
+    height: 25em;
+    width: 25em;
   }
   50% {
-    height: 23em;
-    width: 23em;
-    padding-top: 8em;
-    margin-bottom: 9em;
+    height: 26em;
+    width: 26em;
+    padding-top: 7em;
+    margin-bottom: 7em;
+    margin-top: 4em;
   }
   100% {
-    height: 22em;
-    width: 22em;
+    height: 25em;
+    width: 25em;
   }
 }
 
@@ -291,6 +294,10 @@ button:focus {
 #skillsLink:hover, #projectLink:hover, #contactLink:hover {
   color: #420d09;
   transform: scale(1.1);
+}
+
+#meLink {
+  font-size: 1em;
 }
 
 #meLink:hover {
@@ -340,7 +347,6 @@ button:focus {
 }
 
 #projectsContainer {
-  background-image: url("/images/blackSmoke.jpeg");
   z-index: -1;
   padding:  0  0 5vh 0;
 }
@@ -419,8 +425,6 @@ button:focus {
 
 #footer {
   background-color:#222;
-  margin-top: 5vh;
-  padding-bottom: 10vh;
 }
 
 #header {
