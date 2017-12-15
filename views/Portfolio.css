@@ -472,9 +472,9 @@ button:focus {
 
 .text {
   color: black;
+  padding: 2em;
   font-size: 20px;
   position: absolute;
-  box-shadow: 0 0 10px white;
 }
 
 #footer {
