@@ -62,10 +62,6 @@ app.get('/wikiviewer', function(req,res){
   res.render('Projects/Wiki Viewer/wiki');
 });
 
-app.get('*', function(req,res){
-  res.render('Portolio');
-});)
-
 //post
 
 app.post('/post', function(req,res){
