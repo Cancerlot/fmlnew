@@ -15,6 +15,7 @@
   <!-- External CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css">
 </head>
 
 
@@ -35,7 +36,7 @@
             <p>Skills</p>
           </a>
           <a class="nav-item nav-link" id='projectLink'>
-            <p>projects</p>
+            <p>Projects</p>
           </a>
           <a class="nav-item nav-link" id="contactLink">
             <p>Contact</p>
@@ -55,11 +56,17 @@
         <img class='box fadeIn' src='/images/profilepic.jpg' id='profilePic' />
       </div>
       <div class='col'>
+        <div class='box fadeIn'>
+          <h6>Hi, I am Glen and I am a Front-end Web Developer who is motivated to combine the art of design with the aptitude of programming.</h6>
+        </div>
         <div class='box fadeIn' id='description'>
         </div>
       </div>
     </div>
   </div>
+
+
+
 
   <div class='container'>
     <div class='badge'>
@@ -67,25 +74,56 @@
     </div>
     <div class='row'>
       <div class='col box'>
-        <img src='/images/Web application Icon.png' height="120" width="120" id='webApp'>
+        <img src='/images/Web application Icon.png' height="150" width="150" id='webApp'>
         <br />
-        <h2>Build web Applications</h2>
+        <h2>Build Web Applications</h2>
         <br />
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor </h3>
+        <h3>
+          <ul>
+            <li><h4>HTML5</h4></li>
+            <br>
+            <li><h4>CSS3</h4> Use of Media queries, animations, transitions and keyframes </li>
+            <br>
+            <li><h4>Javascript</h4> Understanding of DOMs, AJAX, JSONs, APIs</li>
+            <br>
+            <li><h4>Jquery</h4></li>
+          </ul>
+        </h3>
       </div>
       <div class='col box'>
-        <img src='/images/build website Icon.jpg' height="120" width="120" id='buildWeb' />
+        <img src='/images/build website Icon.png' height="150" width="150" id='buildWeb' />
         <br />
-        <h2>Build websites</h2>
+        <h2>Build Websites</h2>
         <br />
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</h3>
+        <h3>
+          <ul>
+            <li><h4>Bootstrap</h4> current website is mobile compatable </li>
+            <br>
+            <li>
+                <div class="wrap">
+                  <iframe class="frame" src="http://www.jam-spread-ninja.com">
+                  </iframe>
+                </div>
+            </li>
+          </ul>
+        </h3>
       </div>
+      </div>
+      <div class='row'>
       <div class='col box'>
-        <img src='/images/uxui_icon.png' height="120" width="220" id='uiux' />
+        <img src='/images/hammer.png' height="170" width="160" id='uiux' />
         <br />
-        <h2>Crazy over UI/UX</h2>
+        <h2>Working Towards</h2>
         <br />
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</h3>
+        <h3>
+          <ul>
+            <li><h4>NodeJs</h4> Current App running on Nodejs back-end</li>
+            <br>
+            <li><h4>MongoDB</h4> Contact me form sent to mongodb server with validation</li>
+            <br>
+            <li><h4>vueJs</h4></li>
+          </ul>
+        </h3>
       </div>
     </div>
   </div>
@@ -105,7 +143,7 @@
               <img class='resizeImg' src='/images/clockPrev.png' href='\Projects\.html' />
             </a>
           </div>
-          <h2>Pomodoro Clock</h2>
+          <h5>Pomodoro Clock</h5>
         </div>
         <div class='col'>
           <div class='box2'>
@@ -116,7 +154,7 @@
               <img class='resizeImg' src='/images/calcPrev.png' />
             </a>
           </div>
-          <h2>Javascript Calculator</h2>
+          <h5>Javascript Calculator</h5>
         </div>
         <div class='col'>
           <div class='box2'>
@@ -127,7 +165,7 @@
               <img class='resizeImg' src='/images/wikiPrev.png' />
             </a>
           </div>
-          <h2>Wikipedia Viewer</h2>
+          <h5>Wikipedia Viewer</h5>
         </div>
 
         <div class='col'>
@@ -139,7 +177,7 @@
               <img class='resizeImg' src='/images/weatherPrev.png' />
             </a>
           </div>
-          <h2>Show the Local Weather</h2>
+          <h5>Show the Local Weather</h5>
         </div>
         <div class='col'>
           <div class='box2'>
@@ -150,7 +188,7 @@
               <img class='resizeImg' src='/images/randomPrev.png' />
             </a>
           </div>
-          <h2>Random Quote Machine</h2>
+          <h5>Random Quote Machine</h5>
         </div>
         <div class='col'>
           <div class='box2'>
@@ -161,7 +199,7 @@
               <img class='resizeImg' src='/images/twitch.png' />
             </a>
           </div>
-          <h2>TwitchTV streamers</h2>
+          <h5>TwitchTV streamers</h5>
         </div>
       </div>
 
@@ -169,19 +207,22 @@
   </div>
 
   <div class='parallax4'>
-    <div id='icons'>
-      <i class='fa fa-facebook'></i>
-      <i class='fa fa-whatsapp'></i>
-      <i class='fa fa-google'></i>
-    </div>
-    <div id='copywrite'>
-      Coded and Designed by Glen Lexry
-    </div>
+    <button class="button" data-toggle="modal" data-target="#modalContactMe" id='contactMebutton'><span><a>Contact me &nbsp;</a></span></button>
   </div>
 
   <div class='container-fluid' id='footer'>
 
-    <div id='contactMe'><button class="button" data-toggle="modal" data-target="#modalContactMe"><span><a>Contact me &nbsp;</a></span></button>
+
+
+    <div id='contactMe'>
+      <div id='icons'>
+        <i class='fa fa-facebook'></i>
+        <i class='fa fa-whatsapp'></i>
+        <i class='fa fa-google'></i>
+      </div>
+      <div id='copywrite'>
+        Coded and Designed by Glen Lexry
+      </div>
     </div>
 
     <!-- Modal -->
@@ -221,6 +262,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'>
+  </script>
   <!-- External JS -->
   <script src="Portfolio.js"></script>
 </body>

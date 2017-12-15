@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
 body {
   font-family: 'Ubuntu', sans-serif !important;
-  background-color: #F5F5F5 !important;
 }
 
 html, body {
+  width: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -21,7 +21,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 3em !important;
-  color: #311F1B !important;
+  color: #090C11 !important;
   font-weight: 700 !important;
   margin: 2vh 0 2vh 0 !important;
 }
@@ -30,9 +30,30 @@ h3 {
   text-align: left;
   font-size: small;
   font-size: 1em;
-  color: #9C5E51 !important;
+  color: #090C11 !important;
 }
 
+h4 {
+  font-weight: 700 !important;
+  font-size: 1.1em !important;
+}
+
+h5 {
+  font-size: 1.5em !important;
+  text-align: center;
+  padding: 1em 0 1em 0 !important;
+}
+
+h6 {
+  font-size: 1.5em !important;
+  text-align: center;
+  text-align: left !important;
+  line-height: 2em !important;
+}
+
+ul {
+  list-style-type: none;
+}
 #description {
   color: black;
   font-size: 1.7em;
@@ -40,7 +61,12 @@ h3 {
   font-family: 'Anonymous Pro', monospace;
 }
 
+nav {
+  padding: 0 !important;
+}
+
 p {
+  padding: 0.5em;
   z-index: 1;
   text-align: center;
   border-radius: 5px;
@@ -52,13 +78,12 @@ p {
 }
 
 p:hover {
-  background-color: #311F1B;
+  background-color: RGB(164, 90, 82);
   transition: background-color 0.2s, color 1s;
-  color: white;
 }
 
 #contactMe {
-  padding: 22vh 0 15vh 0;
+  padding: 7em 0 5em 0;
 }
 
 .button {
@@ -103,7 +128,7 @@ p:hover {
 }
 
 button:focus {
-  outline:0 !important;
+  outline: 0 !important;
 }
 
 #webApp {
@@ -140,7 +165,7 @@ button:focus {
   -moz-box-shadow: 0 0 10px black;
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 10px black;
-  background-color: white;
+  background-color: #e9e9e9;
   display: block;
 }
 
@@ -169,18 +194,41 @@ button:focus {
 }
 
 .parallax4 {
-  background-color: black;
-  height: 8vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 9vh;
   width: 100vw;
   position: absolute;
   z-index: 10;
-  opacity: 0.5;
 }
 
 #profilePic {
   width: 600px;
   height: auto;
   border-radius: 40px;
+}
+
+.wrap {
+    width: 450px;
+    height: 450px;
+    padding: 0;
+    overflow: hidden;
+    transform: translate(10%, 0);
+}
+.frame {
+    width: 425px;
+    height: 600px;
+    border: 0;
+    -ms-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
 }
 
 @media screen and (max-width: 1300px) {
@@ -190,10 +238,10 @@ button:focus {
     border-radius: 40px;
   }
   .box2 {
-    width: auto !important;
+    width: 300px !important;
   }
   .resizeImg {
-    height: 30vh !important;
+    height: 300px !important;
   }
 }
 
@@ -208,10 +256,13 @@ button:focus {
     opacity: 1;
   }
   .box2 {
-    width: auto !important;
+    width: 300px !important;
   }
   .resizeImg {
-    height: 30vh !important;
+    height: 300px !important;
+  }
+  #contactMebutton {
+    width: auto;
   }
 }
 
@@ -221,17 +272,24 @@ button:focus {
     width: 400px;
     height: auto;
     border-radius: 40px;
-
   }
   .parallax {
     background-color: #1c1c1c;
     opacity: 0;
   }
   .box2 {
-    width: auto !important;
+    width: 300px !important;
   }
   .resizeImg {
-    height: 35vh !important;
+    height: 300px !important;
+  }
+  #contactMebutton {
+    width: auto;
+  }
+  .wrap {
+    transform: translate(0, 0);
+    width: 0;
+    height: 0;
   }
 }
 
@@ -252,10 +310,10 @@ button:focus {
 
 .badge {
   padding: 6em 0 6em 0 !important;
-  background-color: red;
+  background-color: RGB(255,40,0);
   width: 25em;
   height: 25em;
-  display:block !important;
+  display: block !important;
   margin: 7em auto 5em auto;
   border-radius: 100% !important;
   vertical-align: center;
@@ -339,7 +397,7 @@ button:focus {
 
 #projectsContainer {
   z-index: -1;
-  padding:  0  0 5vh 0;
+  padding: 0 0 5vh 0;
 }
 
 .nav-item, .navbar-brand {
@@ -371,27 +429,32 @@ button:focus {
 }
 
 .box2 {
-  border: solid 2px black;
   margin: auto;
-  padding:2vh;
+  padding: 0;
   background-color: white;
-  border-radius: 5px;
   height: auto;
-  width: 340px;
+  width: 300px;
+  border-radius: 40px;
+  -moz-box-shadow: 0 0 10px black;
+  -webkit-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
+  background-color: #e9e9e9;
+  display: block;
 }
 
 .resizeImg {
   height: 300px;
   width: auto;
   display: block;
-  margin: auto;
+  margin: 0;
   align-items: center;
   transition: all 0.5s;
+  border-radius: 40px;
 }
 
 .resizeImg:hover {
   opacity: 0.4;
-  transform: scale(1.1)
+  transform: scale(1.15)
 }
 
 .overlay {
@@ -415,7 +478,7 @@ button:focus {
 }
 
 #footer {
-  background-color:#222;
+  background-color: #222;
 }
 
 #header {
@@ -423,10 +486,10 @@ button:focus {
 }
 
 .modal {
-   position: fixed;
-   top: 15vh !important;
-   overflow: auto;
-   overflow-y: auto;
+  position: fixed;
+  top: 15vh !important;
+  overflow: auto;
+  overflow-y: auto;
 }
 
 @keyframes appear {
@@ -450,6 +513,7 @@ i {
 }
 
 i:hover {
+  padding-top: 0.2em;
   border-radius: 100%;
   background-color: red;
   height: 1.5em;
@@ -457,7 +521,26 @@ i:hover {
 }
 
 #copywrite {
+  margin-top: 2em;
   text-align: center;
   align-content: center;
   color: white;
+}
+
+#contactMebutton {
+  margin-top: 0.4em;
+  border: white solid 2px;
+}
+
+@keyframes dissapear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2
+  }
+}
+
+.help-block {
+  color: red;
 }
