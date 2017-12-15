@@ -63,7 +63,7 @@ app.get('/wikiviewer', function(req,res){
 });
 
 app.get('*', function(req,res){
-  res.render('portolio');
+  res.render('Portolio');
 });)
 
 //post
