@@ -1,13 +1,22 @@
 $(document).ready(function() {
 
-  /*function scrollWin() {
+/*
+$('.resizeImg').mouseenter(function(){
+  $(this).css('opacity','1')
+}).mouseleave(function() {
+  $(this).css('opacity','0')
+})
+*/
+
+/*
+  function scrollWin() {
     window.scrollTo(0,0);
   }
   scrollWin();
-  */
+*/
 
   let i = 0;
-  const text = 'Daily routine: Open eyes, turn on Computer, Make coffee, open IDE, Code away.';
+  const text = 'Coding has changed my lifestyle, my habits and how I view everything else in Life.';
 
   function delay() {
     setTimeout(function intro() {
