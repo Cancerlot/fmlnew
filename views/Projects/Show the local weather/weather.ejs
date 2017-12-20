@@ -8,14 +8,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src='weather.js'></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111367417-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111367417-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-111367417-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111367417-1');
+  </script>
 </head>
 
 
@@ -37,14 +40,14 @@
 
             <!--This is my refresh button, to releaod the page-->
             <button class="button is-info" id='btn1'>Refresh
-  </button>
+            </button>
 
             <!-- Switch for metric or imperial system -->
 
             <label class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</label>
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
             <p class='block'>Metric/Imperial</p>
 
             <!-- loading bar.(Cause i'm extra.) -->

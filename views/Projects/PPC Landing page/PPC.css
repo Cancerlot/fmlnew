@@ -1,0 +1,90 @@
+html {
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Barlow', sans-serif !important;
+}
+
+h1 {
+  color: white !important;
+  padding: 0.8em;
+  font-size: 4em !important;
+  font-weight: 900 !important;
+  text-align: center;
+  background-color: #171717;
+  margin-top: 0 !important;
+  margin-bottom: 1em !important;
+}
+
+.box {
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+}
+
+#billion {
+  height: 100px;
+  width: 150px;
+}
+
+#emi {
+  margin: 20px;
+  margin-left: 100px;
+  padding: 20px;
+}
+
+.center {
+  width: 100%;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+#browse {
+  padding: 5em;
+}
+
+.options {
+  margin: 2em;
+  width: 250px;
+}
+
+.brands {
+  height: 120px;
+  width: 130px;
+  padding: 20px;
+}
+
+#brandings {
+  margin: auto;
+  max-width: 1000px;
+}
+
+#icon3 {
+  transform: rotate(45deg);
+}
+
+a {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #171717;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+#tac {
+background-color: #DAEAE9;
+}
+
+#macbook {
+  max-width: 60vw;
+  width: 60vw;
+  display: block;
+  margin: 3em auto;
+}

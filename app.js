@@ -32,6 +32,7 @@ app.use('/randomquotemachine', express.static('views/Projects/Random Quote Machi
 app.use('/showthelocalweather', express.static('views/Projects/Show the local weather'));
 app.use('/twitchtv', express.static('views/Projects/TwitchTV API'));
 app.use('/wikiviewer', express.static('views/Projects/Wiki Viewer'));
+app.use('/PPC', express.static('views/Projects/PPC Landing page'));
 //route
 
 app.get('/', function(req,res){
@@ -60,6 +61,10 @@ app.get('/twitchtv', function(req,res){
 
 app.get('/wikiviewer', function(req,res){
   res.render('Projects/Wiki Viewer/wiki');
+});
+
+app.get('/PPC', function(req,res){
+  res.render('Projects/PPC Landing page/PPC');
 });
 
 //post
