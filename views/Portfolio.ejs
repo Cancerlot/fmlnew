@@ -11,11 +11,7 @@
   <meta name='keywords' content='Portfolio, web, web-developer, front-end, front end web developer, for hire, hiring, malaysia'>
   <meta name='description' content="This is Gleen Lexry Alexander Wan's portfolio. I am a web developer who specialises in front end development">
   <!-- link CSS -->
-  <link rel='stylesheet' type='text/css' href="Portfolio.css" />
-  <!-- External CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css">
+  <link rel="stylesheet" href="styles/styles.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111367417-1"></script>
 <script>
@@ -27,278 +23,124 @@
 </head>
 
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class='container'>
-      <a class="navbar-brand">
-    <img src='/images/bread.png' height="40" width="40" id='meLink'/>
-  </a>
-      <a class="navbar-brand" id='jamSpreadNinja'>Jam Spread Ninja
-</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" id='skillsLink'>
-            <p>Skills</p>
-          </a>
-          <a class="nav-item nav-link" id='projectLink'>
-            <p>Projects</p>
-          </a>
-          <a class="nav-item nav-link" id="contactLink">
-            <p>Contact</p>
-          </a>
+<body class="is-preload">
+
+  <!-- Banner -->
+    <section id="banner">
+      <div class="inner">
+        <h1>Jam Spread Ninja</h1>
+        <p>Combining the art of design with the aptitude of programming</p>
+      </div>
+      <video autoplay loop muted playsinline src="images/banner.mp4"></video>
+    </section>
+
+  <!-- Highlights -->
+    <section class="wrapper">
+      <div class="inner">
+        <header class="special">
+          <h2>About me</h2>
+          <p>I'm Glen and a front-end web developer who's responsible lies within implementing visual and interactive elements that users engage with through their web browser when using a web application.</p>
+        </header>
+        <div class="highlights">
+          <section>
+            <div class="content">
+              <header>
+                <img src="images/sass-icon.png" alt="">
+                <h3>SCSS</h3>
+              </header>
+              <p>Building styles on a component level, making my code more <span class="text-bold">modular</span> and <span class="text-bold">maintainable</span> without a headache</p>
+            </div>
+          </section>
+          <section>
+            <div class="content">
+              <header>
+                <img src="images/gulp-icon.png" alt="">
+                <h3>Gulp Build tool</h3>
+              </header>
+              <p>Automating all the boring stuff like uglifying and compressing images etc.</p>
+            </div>
+          </section>
+          <section>
+            <div class="content">
+              <header>
+                <img src="images/html-icon.png" alt="">
+                <h3>HTML5</h3>
+              </header>
+              <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+            </div>
+          </section>
+          <section>
+            <div class="content">
+              <header>
+                <img src="images/javascript-icon.png" alt="">
+                <h3>Javscript</h3>
+              </header>
+              <p>My little whip to tame the website to make the page more <span class="text-bold">interactive</span></p>
+            </div>
+          </section>
+          <section>
+            <div class="content">
+              <header>
+                <img src="images/react-icon.png" alt="">
+                <h3>React Js</h3>
+              </header>
+              <p>Javscript library to improve <span class="text-bold">User Experience</span> and write <span class="text-bold">more modular code</span></p>
+            </div>
+          </section>
+          <section>
+            <div class="content">
+              <header>
+                <img src="images/coffee.png" alt="">
+                <h3>Coffee</h3>
+              </header>
+              <p>What keeps me going without going mental <span class="text-small">(Not a skill)</span></p>
+            </div>
+          </section>
         </div>
       </div>
-    </div>
-  </nav>
-  <div id='me'>
-  </div>
-  <div class='parallax'>
-  </div>
-  <div class='container'>
+    </section>
 
-    <div class='row' id='header'>
-      <div class='col'>
-        <img class='box fadeIn' src='/images/profilepic.jpg' id='profilePic' />
-      </div>
-      <div class='col'>
-        <div class='box fadeIn'>
-          <h6>Hi, I am Glen and I am a Front-end Web Developer who is motivated to combine the art of design with the aptitude of programming.</h6>
-        </div>
-        <div class='box fadeIn' id='description'>
+  <!-- CTA -->
+    <section id="cta" class="wrapper">
+      <div class="inner">
+        <h2>Worked with</h2>
+        <div class="img-container logos">
+          <img src="images/swg-logo.jpg" alt="">
+          <img src="images/emery-logo.png" alt="">
+          <img src="images/mates-logo.png" alt="">
+          <img src="images/dugout-logo.svg" alt="">
+          <img src="images/automology-logo.png" alt="">
+          <img src="images/x1r-logo.png" alt="">
+          <img src="images/xcite-logo.svg" alt="">
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-
-
-
-  <div class='container'>
-    <div class='badge'>
-      <h1 id='skills'>Skills</h1>
-    </div>
-    <div class='row'>
-      <div class='col box'>
-        <img src='/images/Web application Icon.png' height="150" width="150" id='webApp'>
-        <br />
-        <h2>Build Web Applications</h2>
-        <br />
-        <ul>
-          <li>
-            <h3>HTML5</h3></li>
-          <br>
-          <li>
-            <h3>CSS3</h3>
-            <h4>Use of Media queries, animations, transitions and keyframes</h4> </li>
-          <br>
-          <li>
-            <h3>Javascript</h3>
-            <h4>Understanding of DOMs, AJAX, JSONs, APIs</h4></li>
-          <br>
-          <li>
-            <h3>Jquery</h3></li>
-        </ul>
+    <section class="wrapper">
+      <div class="inner">
+        <header class="special">
+          <h2>Contact Me</h2>
+          <div class="d-flex contact-me">
+            <img src="images/profilepic.jpeg" alt="">
+            <p>For any inquiries or job opportunities, please email me at <a href="mailto:Glenwan@gmail.com">Glenwan@gmail.com</a></p><br />
+            <p></p>
+          </div>
+        </header>
       </div>
-      <div class='col box'>
-        <img src='/images/build website Icon.png' height="150" width="150" id='buildWeb' />
-        <br />
-        <h2>Build Websites</h2>
-        <br />
-        <ul>
-          <li>
-            <h3>Bootstrap</h3>
-            <h4>Current website is mobile compatable. </h4></li>
-          <br>
-          <li>
-            <h4 data-toggle="modal" data-target="#modalMobile" id='mobile'>click here to view mobile version</h4>
-          </li>
-        </ul>
-      </div>
-      <div class='col box'>
-        <img src='/images/hammer.png' height="170" width="160" id='uiux' />
-        <br />
-        <h2>Working Towards</h2>
-        <br />
-        <h3>
-          <ul>
-            <li><h3>NodeJs</h3>
-        <h4>Current App running on Nodejs/Express/ejs back-end</h4></li>
-        <br>
-        <li>
-          <h3>MongoDB</h3>
-          <h4>Contact me form sent to mongodb server with validation</h4></li>
-        <br>
-        <li>
-          <h3>vueJs</h3></li>
-        </ul>
-        </h3>
-      </div>
-    </div>
+    </section>
 
-    <div class='container-fluid' id='projectsContainer'>
-      <div class='container'>
-        <div class='badge'>
-          <h1 id='projects'>Projects</h1>
-        </div>
-        <div class='row'>
-          <div class='col'>
-            <div class='box2'>
-              <a href='/pomodoroclock' target="_blank">
-                <div class="overlay">
-                  <div class="text">Fancy Clock/ Stopwatch</div>
-                </div>
-                <img class='resizeImg' src='/images/clockPrev.png' href='\Projects\.html' />
-              </a>
-            </div>
-            <h5>Pomodoro Clock</h5>
-          </div>
-          <div class='col'>
-            <div class='box2'>
-              <a href='/jscalculator' target="_blank">
-                <div class="overlay">
-                  <div class="text">Self-made calculator</div>
-                </div>
-                <img class='resizeImg' src='/images/calcPrev.png' />
-              </a>
-            </div>
-            <h5>Javascript Calculator</h5>
-          </div>
-          <div class='col'>
-            <div class='box2'>
-              <a href='/wikiviewer' target="_blank">
-                <div class="overlay">
-                  <div class="text">Use of Wiki search Api</div>
-                </div>
-                <img class='resizeImg' src='/images/wikiPrev.png' />
-              </a>
-            </div>
-            <h5>Wikipedia Viewer</h5>
-          </div>
-
-          <div class='col'>
-            <div class='box2'>
-              <a href='/showthelocalweather' target="_blank">
-                <div class="overlay">
-                  <div class="text">Shows the local weather by using geo location Api</div>
-                </div>
-                <img class='resizeImg' src='/images/weatherPrev.png' />
-              </a>
-            </div>
-            <h5>Show the Local Weather</h5>
-          </div>
-          <div class='col'>
-            <div class='box2'>
-              <a href='/randomquotemachine' target="_blank">
-                <div class="overlay">
-                  <div class="text">Able to share quotes from database onto twitter</div>
-                </div>
-                <img class='resizeImg' src='/images/randomPrev.png' />
-              </a>
-            </div>
-            <h5>Random Quote Machine</h5>
-          </div>
-          <div class='col'>
-            <div class='box2'>
-              <a href='/twitchtv' target="_blank">
-                <div class="overlay">
-                  <div class="text">Use of Ajax to collect data from Twitch APIs</div>
-                </div>
-                <img class='resizeImg' src='/images/twitch.png' />
-              </a>
-            </div>
-            <h5>TwitchTV streamers</h5>
-          </div>
-          <div class='col'>
-            <div class='box2'>
-              <a href='/PPC' target="_blank">
-                <div class="overlay">
-                  <div class="text">Website I created for a contest</div>
-                </div>
-                <img class='resizeImg' src='/images/PPC landing page.png' />
-              </a>
-            </div>
-            <h5>PPC Landing Page</h5>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class='container-fluid' id='footer'>
-
-    <div class='parallax4'>
-      <button class="button" data-toggle="modal" data-target="#modalContactMe" id='contactMebutton'><span><a>Contact me &nbsp;</a></span></button>
-    </div>
-
-    <div id='contactMe'>
-      <div id='icons'>
-        <i class='fa fa-facebook'></i>
-        <i class='fa fa-whatsapp'></i>
-        <i class='fa fa-google'></i>
-      </div>
-      <div id='copywrite'>
-        Coded and Designed by Glen Lexry
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="modalContactMe">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Contact Me</h5>
-          </div>
-          <div class="modal-body">
-            <form method='POST' action='/post'>
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name='name' class="form-control" placeholder="Your name">
-              </div>
-              <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="text" name='email' class="form-control" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">Your email is safe with me <i class="fa fa-lock"></i></small>
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea type="text" name='message' class="form-control" rows='5'></textarea>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <input type="submit" class="btn btn-primary">
-              </div>
-            </form>
-          </div>
+  <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <div class="copyright">
+          Copyright &copy; Jam Spread Ninja 2018. All rights reserved.
         </div>
       </div>
-    </div>
+    </footer>
 
-    <div class='modal fade' id='modalMobile'>
-      <div class='modal-dialog'>
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="wrap">
-              <iframe class="frame" src="http://www.jam-spread-ninja.com">
-            </iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- Scripts -->
+    <script src="scripts/app.js"></script>
 
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
-  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'>
-  </script>
-  <!-- External JS -->
-  <script src="Portfolio.js"></script>
 </body>
 
 </html>
